@@ -2,8 +2,8 @@ import React from 'react'
 
 function Home() {
     return (
-        <div>
-            HomeKE1
+        <div className="HomePage">
+            hakkımda bazı şeylerin yazılı olduğu sayfa
         </div>
     )
 }

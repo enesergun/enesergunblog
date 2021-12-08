@@ -34,6 +34,7 @@ function App() {
           ))
         }
         </div>
+        <div className="col"></div>
         <div className="routes">
         <Routes>
           <Route path="/" element={<Home />} />
