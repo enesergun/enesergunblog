@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'; 
+import MarkDown from 'markdown-to-jsx';
 
-function Article() {
+function Article(props) {
     return (
         <div>
-            tek yazı
+            asdas
+            {props.postID}
         </div>
     )
 }

@@ -1,18 +1,13 @@
-import React, { useState, useEffect } from 'react'; 
-import MarkDown from 'markdown-to-jsx';
 import Article from './Article' 
 import POSTS from '../posts/posts'
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 
-function BlogList() {
-        
+function BlogList(props) {
+        // <Article postID={post.id} />
     return (
         <div>
-            {
-                POSTS.map((post)=> (
-                    <div>{post.title}</div>
-                ))
-            }
+            HOME!
         </div>
     )
 }
