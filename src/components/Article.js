@@ -28,7 +28,7 @@ function Article(props) {
 	});
  
 	return (
-		<div class="article">
+		<div className="article">
 			<span className="home">
 				<StyledLink to="/">Home</StyledLink>	
 			</span>

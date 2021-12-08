@@ -37,6 +37,7 @@ body {
   padding-top: 20px;
   box-shadow: 6px 0px 9px 1px rgb(255 255 255 / 12%);
 }
+
 .posts .link {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -47,20 +48,25 @@ body {
 }
 .routes {
   width: 100%;
-  text-align: center;
   margin-left: 250px; /* Same as the width of the sidenav */
   padding: 0px 10px;
 }
 
 .home {
   position: absolute;
-  left: 250px;
+  right: 25px;
 }
 .post {
   margin-top: 10px;
   font-size: 15px;
 }
 
+/* @media screen and (max-width:783px) {
+  .posts {
+    
+  }
+  
+} */
 
 
 
