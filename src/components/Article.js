@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 import MarkDown from 'markdown-to-jsx';
 import POSTS from '../posts/posts'
+import { Link } from "react-router-dom";
 
 function Article(props) {
     const file_name = `${POSTS[props.postID].file}`;
@@ -22,6 +23,7 @@ function Article(props) {
 			<MarkDown>
 				{post}
 			</MarkDown>
+            <Link to="/">Home</Link>
 		</div>
 	);
 }

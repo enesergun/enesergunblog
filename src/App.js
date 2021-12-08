@@ -9,7 +9,6 @@ import Article from './components/Article'
 
 function App() {
   const [id, setId] = useState('')
-  console.log(id)
   return (
       <div className="App">
         {
