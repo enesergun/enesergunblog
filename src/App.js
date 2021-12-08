@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import BlogList from './components/BlogList'
+import Home from './components/Home'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import POSTS from './posts/posts'
 import Article from './components/Article'
@@ -36,7 +36,7 @@ function App() {
         </div>
         <div className="routes">
         <Routes>
-          <Route path="/" element={<BlogList />} />
+          <Route path="/" element={<Home />} />
           <Route path={`/${id}`} element={<Article postID={id} />} />
         </Routes>
         </div>
