@@ -4,6 +4,19 @@ import BlogList from './components/BlogList'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import POSTS from './posts/posts'
 import Article from './components/Article'
+import styled from "styled-components";
+
+
+const StyledLink = styled(Link)`
+  color: White;
+  text-decoration: none;
+  margin: 1rem;
+  position: relative;
+
+  ${Link}:hover {
+    color: rgb(204, 204, 204);
+  }
+`;
 
 
 
@@ -16,7 +29,7 @@ function App() {
         {
           POSTS.map((post, i) => (
             <div class="link" key={i}> 
-              <Link onClick={() => setId(post.id )} to={`/${post.id}`}>{post.title}</Link>
+              <StyledLink onClick={() => setId(post.id )} to={`/${post.id}`}>{post.title}</StyledLink>
             </div>
           ))
         }
