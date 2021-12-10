@@ -6,6 +6,7 @@ function App() {
   
   return (
       <div className="App">
+        {/* <nav className="contact"></nav> */}
         <Sidebar />
       </div>
     

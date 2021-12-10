@@ -30,7 +30,7 @@ const HomeLink = styled(Link)`
 function Sidebar() {
     const [title, setTitle] = useState('');
     const [id, setId] = useState('');
-    const [windowWidth, setWindowWidth] = useState('')
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
     const handleResize = (e) => {
         setWindowWidth(window.innerWidth);
