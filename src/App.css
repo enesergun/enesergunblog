@@ -50,6 +50,7 @@ body {
   width: 100%;
   margin-left: 250px; /* Same as the width of the sidenav */
   padding: 0px 10px;
+  overflow-x: hidden;
 }
 
 .home {

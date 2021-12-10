@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Home from './components/Home'
-import { Routes, Route, Link } from "react-router-dom";
-import POSTS from './posts/posts'
-import Article from './components/Article'
+import Burger from './components/Burger'
+import { Link } from "react-router-dom";
+
 import styled from "styled-components";
+
 
 
 const StyledLink = styled(Link)`
@@ -21,29 +21,10 @@ const StyledLink = styled(Link)`
 
 
 function App() {
-  console.log(POSTS)
-  const [title, setTitle] = useState('')
-  const [id, setId] = useState('')
+  
   return (
       <div className="App">
-        <div className="posts">
-          {
-            POSTS.map((post, i) => (
-              <div className="link" key={i}> 
-                <StyledLink onClick={() => {setTitle(post.title );setId(post.id)}} to={`/${post.title}`}>{post.title}</StyledLink>
-              </div>
-            ))
-          }
-        </div>
-        
-
-        <div className="col"></div>
-        <div className="routes">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path={`/${title}`} element={<Article postID={id} />} />
-        </Routes>
-        </div>
+        <Burger />        
         
       </div>
     
