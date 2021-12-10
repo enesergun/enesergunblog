@@ -16,6 +16,16 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const HomeLink = styled(Link)`
+  color: White;
+  margin-left: 16px;
+  margin-bottom: 6px;
+
+  ${Link}:hover {
+    color: rgb(204, 204, 204);
+  }
+`;
+
 
 function Sidebar() {
     const [title, setTitle] = useState('');
@@ -40,6 +50,10 @@ function Sidebar() {
             Number(windowWidth) <= 783 ?
             <Menu>
                 <div className="posts">
+
+                <span className="home">
+				    <HomeLink to="/">Ana Sayfa</HomeLink>	
+			    </span>
             {
                 POSTS.map((post, i) => (
                 <div className="link" key={i}> 
@@ -47,9 +61,14 @@ function Sidebar() {
                 </div>
                 ))
             }
+            
             </div>
             </Menu> :
             <div className="posts">
+
+                <span className="home">
+				    <HomeLink to="/">Ana Sayfa</HomeLink>	
+			    </span>
             {
                 POSTS.map((post, i) => (
                 <div className="link" key={i}> 

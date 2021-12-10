@@ -53,10 +53,7 @@ body {
   overflow-x: hidden;
 }
 
-.home {
-  position: absolute;
-  right: 25px;
-}
+
 .post {
   margin-top: 10px;
   font-size: 15px;
@@ -66,8 +63,8 @@ body {
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 20px;
+  top: 15px;
   color: tomato;
 }
 .bm-burger-bars-hover {
@@ -83,7 +80,11 @@ body {
 }
 
 
-
+@media screen and (max-width: 783px) {
+    .routes {
+      margin: 60px 0 0 20px;
+    }
+}
 
 
 

@@ -4,7 +4,7 @@ import POSTS from '../posts/posts'
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const StyledLink = styled(Link)`
+const HomeLink = styled(Link)`
   color: White;
 
   ${Link}:hover {
@@ -29,9 +29,6 @@ function Article(props) {
  
 	return (
 		<div className="article">
-			<span className="home">
-				<StyledLink to="/">Home</StyledLink>	
-			</span>
 			<div className="post">
 				<MarkDown>
 					{post}
