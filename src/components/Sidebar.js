@@ -5,21 +5,22 @@ import styled from "styled-components";
 import { slide as Menu } from 'react-burger-menu'
 import RouteComponent from './RouteComponent'
 
-const StyledLink = styled(Link)`
+
+const HomeLink = styled(Link)`
   color: White;
-  text-decoration: none;
-  margin: 1rem;
-  position: relative;
+  margin-left: 16px;
+  margin-bottom: 6px;
 
   ${Link}:hover {
     color: rgb(204, 204, 204);
   }
 `;
 
-const HomeLink = styled(Link)`
+const StyledLink = styled(Link)`
   color: White;
-  margin-left: 16px;
-  margin-bottom: 6px;
+  text-decoration: none;
+  margin: 1rem;
+  position: relative;
 
   ${Link}:hover {
     color: rgb(204, 204, 204);

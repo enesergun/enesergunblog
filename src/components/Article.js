@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 import MarkDown from 'markdown-to-jsx';
 import POSTS from '../posts/posts'
-import { Link } from "react-router-dom";
-import styled from "styled-components";
 
-const HomeLink = styled(Link)`
-  color: White;
-
-  ${Link}:hover {
-    color: rgb(204, 204, 204);
-  }
-`;
 
 function Article(props) {
     const file_name = `${POSTS[props.postID].file}`;
