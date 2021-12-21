@@ -8,7 +8,7 @@ function RouteComponent(props) {
         <div className="routes">
             <Routes>
             <Route path="/" element={<Home />} />
-            <Route path={`/${props.title}`} element={<Article postID={props.id} />} />
+            <Route path={`/${props.pathname}`} element={<Article postID={props.id} />} />
             </Routes>
         </div>
     )

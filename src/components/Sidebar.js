@@ -32,6 +32,7 @@ function Sidebar() {
     const [title, setTitle] = useState('');
     const [id, setId] = useState('');
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    const [pathname, setPathname] = useState('')
 
     const handleResize = (e) => {
         setWindowWidth(window.innerWidth);
@@ -58,7 +59,7 @@ function Sidebar() {
             {
                 POSTS.map((post, i) => (
                 <div className="link" key={i}> 
-                    <StyledLink onClick={() => {setTitle(post.title );setId(post.id)}} to={`/${post.title}`}>{post.title}</StyledLink>
+                    <StyledLink onClick={() => {setTitle(post.title );setId(post.id);setPathname(post.pathname)}} to={`/${post.pathname}`}>{post.title}</StyledLink>
                 </div>
                 ))
             }
@@ -73,14 +74,14 @@ function Sidebar() {
             {
                 POSTS.map((post, i) => (
                 <div className="link" key={i}> 
-                    <StyledLink onClick={() => {setTitle(post.title );setId(post.id)}} to={`/${post.title}`}>{post.title}</StyledLink>
+                    <StyledLink onClick={() => {setTitle(post.title );setId(post.id);setPathname(post.pathname)}} to={`/${post.pathname}`}>{post.title}</StyledLink>
                 </div>
                 ))
             }
             </div>
             }
             <div className="col"></div>
-            <RouteComponent title={title} id={id} />
+            <RouteComponent pathname={pathname} title={title} id={id} />
         </>
         
     )
